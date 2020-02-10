@@ -1,0 +1,16 @@
+n = int(input())
+scores = list(map(int, input().rstrip().split()))
+mi=scores[0]
+ma=scores[0]
+ma_count=0
+mi_count=0
+for i in range(0,n):
+    if(scores[i]>ma):
+            ma=scores[i]
+            ma_count+=1
+    if(scores[i]<mi):
+            mi=scores[i]
+            mi_count+=1
+print(ma_count,mi_count)
+    
+

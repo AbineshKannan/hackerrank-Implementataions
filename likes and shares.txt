@@ -1,0 +1,10 @@
+n=int(input())
+share=5
+likes=[]
+while(n!=0):
+    share=share//2
+    likes.append(share)
+    print(likes)
+    share=share*3
+    n=n-1
+print(sum(likes))

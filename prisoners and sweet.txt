@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;cin>>n;
+    while(n--){
+    int prisoners,sweets,rounds;
+    cin>>prisoners>>sweets>>rounds;
+    int ans=rounds+sweets-1;
+    if(ans>prisoners){
+        if(ans%prisoners==0)
+            cout<<prisoners;
+        else
+            cout<<ans%prisoners;}
+    else
+        cout<<ans<<endl;
+    }
+    return 0;
+}

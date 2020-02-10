@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+int b,w;cin>>b>>w;
+int bc,wc,z;
+cin>>bc>>wc>>z;
+if(bc>wc)
+    cout<<"1"<<((b+w)*z)+(w*wc);
+else if(wc>bc)
+    cout<<"2"<<((b+w)*z)+(bc*b);
+else
+    cout<<(b*bc)+(w*wc);
+}

@@ -1,0 +1,9 @@
+(n,m)=map(int,input().split())
+ls=list(map(int,input().split()))
+ls.remove(ls[m])
+cost=int(sum(ls)/2)
+k=int(input())
+if(k>cost):
+    print(k-cost)
+else:
+    print("Bon Appetit")

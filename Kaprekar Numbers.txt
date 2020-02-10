@@ -1,0 +1,18 @@
+n=int(input())
+m=int(input())
+ls=[]
+if(n==1):
+    n=4
+    ls=[1]
+for each in range(n,m+1):
+    sq=each*each
+    sq=str(sq)
+    le=len(sq)//2
+    l=int(sq[0:le])
+    r=int(sq[le:len(sq)])
+    if(l+r==each):
+        ls.append(each)
+if(len(ls)==0):
+    print("INVALID RANGE")
+else:
+    print(*ls,sep=" ")

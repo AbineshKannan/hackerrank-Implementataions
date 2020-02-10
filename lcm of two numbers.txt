@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+int lcm(int x,int y){
+    int max,lcm;
+if(x>y)
+max=x;
+else
+max=y;
+while(1){
+if((max%x==0)&&(max%y==0)){
+    lcm=max;
+    break;}
+max+=1;
+}
+return lcm;
+}
+int main()
+{
+int max,a,b;
+cin>>a>>b;
+printf("%d",lcm(a,b));
+return 0;
+}

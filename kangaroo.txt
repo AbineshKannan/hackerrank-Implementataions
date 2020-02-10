@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+int s1,s2,k1,k2,flag=0;
+cin>>s1>>k1>>s2>>k2;
+int k1_dist=s1+k1;
+int k2_dist=s2+k2;
+do
+{
+    if(k1_dist==k2_dist){
+        flag=1;
+        break;}
+    k1_dist+=k1;
+    k2_dist+=k2;
+}while(k1_dist<100000000);
+
+if(flag)
+    printf("YES");
+else
+    printf("NO");
+}
